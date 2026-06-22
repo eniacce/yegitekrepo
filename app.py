@@ -5,7 +5,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():  # put application's code here
-    return 'Hello World!'
+    a=12
+    b=5;
+
+    return 'Hello World! {}' + a // b
 
 @app.route('/saldir2')
 def hello_world2():  # put application's code here
